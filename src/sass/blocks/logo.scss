@@ -8,7 +8,7 @@
         font-weight: 700;
         font-size: 43px;
         line-height: 78%;
-        color: #0a2640;
+        color: $dark;
     }
     &__wrapper {
         display: flex;
@@ -27,4 +27,40 @@
         height: 17px;
         background: $dark;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        display: flex;
+        align-items: center;
+        &__text {
+            font-size: 28px;
+        }
+        &__first {
+            width: 14px;
+            height: 10px;
+        }
+        &__second {
+            width: 20px;
+            height: 11px;
+        }
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        display: flex;
+        align-items: center;
+        &__text {
+            font-size: 20px;
+        }
+        &__first {
+            width: 10px;
+            height: 7px;
+        }
+        &__second {
+            width: 15px;
+            height: 8px;
+        }
+    }   
 }

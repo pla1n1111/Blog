@@ -1,0 +1,202 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+    margin-top: 84px;
+    padding-top: 100px;
+    padding-bottom: 117px;
+    display: flex;
+    gap: 179px;
+    align-items: start;
+    &__text {
+        margin-top: 40px;
+        max-width: 300px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%; 
+        color: $gray;
+    }
+    &__rights {
+        margin-top: 64px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: $gray;
+    }
+    &__wrapper {
+        display: flex;
+        gap: 140px;
+        flex-wrap: wrap;
+    }
+    &__links {
+        list-style: none;
+        padding: 0;
+        li {
+            margin-top: 35px;
+            &:first-of-type {
+                margin-top: 32px;
+            }
+        }
+    }
+    &__heading {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 160%;
+        color: $black;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: $gray;
+        text-decoration: none;
+    }
+    &__hiring {
+        position: relative;
+        &::after {
+            content: 'Hiring!';
+            border-radius: 120px;
+            width: 72px;
+            height: 30px;
+            background: #65e4a3;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 215%;
+            color: $dark;
+            padding: 5px 14px;
+            position: absolute;
+            left: 90px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            top: 0px;
+        }
+    }
+} 
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        gap: 70px;
+        &__wrapper {
+            gap: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        margin-top: 34px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        &__text {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        &__rights {
+            margin-top: 40px;
+            font-size: 12px;
+        }
+        &__links {
+            li {
+                margin-top: 28px;
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+            }
+        }
+        &__heading {
+            font-size: 16px;
+        }
+        &__link {
+            font-size: 16px;
+        }
+        &__hiring {
+            &::after {
+                content: 'Hiring!';
+                border-radius: 120px;
+                width: 64px;
+                height: 20px;
+                font-size: 12px;
+                padding: 4px 12px;
+                left: 70px;
+                top: 2px;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-top: 14px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        justify-content: space-between;
+        &__text {
+            margin-top: 20px;
+            font-size: 12px;
+            max-width: 250px;
+        }
+        &__wrapper {
+            gap: 40px;
+        }
+        &__rights {
+            margin-top: 40px;
+            font-size: 10px;
+        }
+        &__links {
+            li {
+                margin-top: 20px;
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+            }
+        }
+        &__heading {
+            font-size: 14px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+        &__hiring {
+            &::after {
+                content: 'Hiring!';
+                border-radius: 120px;
+                width: 44px;
+                height: 20px;
+                font-size: 10px;
+                padding: 4px 5px;
+                left: 55px;
+                top: 0px;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 376px) {
+    .footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 30px;
+        gap: 30px;
+        &__wrapper {
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+        &__text {
+            text-align: center;
+            display: block;
+            margin: 15px auto 0 auto;
+        }
+        &__info {
+            width: 100%;
+            justify-content: center;
+        }
+        &__rights {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .logo {
+            justify-content: center;
+        }
+    }
+}

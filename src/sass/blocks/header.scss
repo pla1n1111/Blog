@@ -2,7 +2,8 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     &__menu {
         display: flex;
         list-style: none;
@@ -16,4 +17,30 @@
             text-decoration: none;
         }
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        &__menu {
+            &-link {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+        &__menu {
+            gap: 0px;
+            min-width: 250px;
+            padding-left: 0px;
+            justify-content: space-between;
+            margin-left: 10px;
+            &-link {
+                font-size: 12px;
+            }
+        }
+    }   
 }

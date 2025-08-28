@@ -48,3 +48,21 @@ body {
     width: 100%;
     padding: 0 10px;
 }
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 30px 40px 0px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px 20px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    body {
+        padding: 5px 10px 0px 5px;
+    }
+}
