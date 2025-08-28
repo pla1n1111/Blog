@@ -1,0 +1,68 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.article {
+    &__heading {
+        margin-top: 45px;
+        padding: 27.5px 0;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: $dark;
+        text-align: center;
+    }
+    &__title {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 131%;
+        text-align: center;
+        color: #0a2640;
+    }
+    &__flex {
+        display: flex;
+        gap: 100px;
+        margin-top: 40px;
+    }
+    &__img {
+        border-radius: 24px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: $gray;
+        span {
+            font-weight: 700;
+            color: $dark;
+            margin-right: 12px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__name {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 150%;
+        color: $black;
+        letter-spacing: -1px;
+        margin-top: 12px;
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 12px;
+    }
+    &__login {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: $black;
+    }
+}

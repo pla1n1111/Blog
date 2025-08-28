@@ -1,2 +1,8 @@
 @use "/src/sass/base/basic.scss";
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/ui/buttons.scss";
+
+@use "/src/sass/blocks/logo.scss";
+@use "/src/sass/blocks/header.scss";
+
+@use "/src/sass/blocks/article.scss";

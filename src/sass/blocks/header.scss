@@ -1,0 +1,18 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__menu {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        &-link {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 175%;
+            color: $dark;
+            text-decoration: none;
+        }
+    }
+}

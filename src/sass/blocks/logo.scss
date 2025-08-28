@@ -1,0 +1,30 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.logo {
+    display: flex;
+    align-items: center;
+    &__text {
+        font-family: "Manrope", sans-serif;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 78%;
+        color: #0a2640;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2.21px;
+    }
+    &__first {
+        border-radius: 0 12px 12px 0;
+        width: 18px;
+        height: 13px;
+        background: $dark;
+    }
+    &__second {
+        border-radius: 0 12px 12px 0;
+        width: 25px;
+        height: 17px;
+        background: $dark;
+    }
+}
