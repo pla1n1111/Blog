@@ -6,6 +6,7 @@
     &__menu {
         display: flex;
         list-style: none;
+        align-items: center;
         gap: 40px;
         &-link {
             font-weight: 600;

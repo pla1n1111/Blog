@@ -7,4 +7,15 @@
     width: 128px;
     height: 40px;
     line-height: 150%;
+    font-size: 16px;
+}
+
+.btn-big {
+    @include button;
+    border-radius: 56px;
+    padding: 16px 56px;
+    width: 219px;
+    height: 60px;
+    line-height: 140%;
+    font-size: 20px;
 }

@@ -1,0 +1,64 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.news {
+    margin-top: 96px;
+    padding: 0px 101px;
+    &__title {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 150%;
+        color: $black;
+    }
+    &__wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 80px;
+        column-gap: 50px;
+    }
+    &__card {
+        min-height: 424px;
+        position: relative;
+    }
+    &__info {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: $gray;
+        margin-top: 24px;
+        span {
+            font-weight: 700;
+            color: $dark;
+            margin-right: 12px;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: $black;
+        margin-top: 12px;
+        letter-spacing: -0.2px;
+        margin-bottom: 40px;
+    }
+    &__profile {
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 96px;
+    }
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: $dark;
+    margin-top: 72px;
+}
